@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mrs. Smith's Classroom Website</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+  <div id="wrapper">
+  <header>
+    <img src="img/griffin.png">
+    <h1>Welcome to Mrs. Smith's Classroom!</h1>
+  </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reading.html">Reading Class</a></li>
+        <li><a href="creativewriting.html">Creative Writing Class</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="form.html">Ask a Question</a></li>
+      </ul>
+    </nav>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
