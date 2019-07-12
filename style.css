@@ -5,6 +5,7 @@ body{
 }
 #wrapper{
   min-width: 760px; max-width: 1100px; margin:auto;
+
 }
 header{
   width:100%;
@@ -41,6 +42,7 @@ nav a{
 section.homemain{
   margin:0;
   display: table;
+  background-color: #fff;
 }
 section img{
   display: table-cell;
@@ -57,6 +59,8 @@ section.homemain h2{
 section.attention{
   margin:0;
   display: table;
+  background-color: #fff;
+  padding:0 0 0 10px;
 }
 .attention .upcoming h2{
   text-align:center;
@@ -73,6 +77,7 @@ border-right:1px solid white;
 }
 .attention .reminders{
   display: table-cell;
+  width:100%;
 }
 .attention .reminders h2{
   padding: 0 0 0 7em ;
@@ -84,6 +89,7 @@ border-right:1px solid white;
   display: table;
   border-top: 1px solid white;
   margin-top: 5px;
+  background-color: #fff;
 }
 .recommentations div h2{
   text-align: center;
@@ -94,13 +100,26 @@ border-right:1px solid white;
 }
 .aboutme{
   display: table;
+  background-color: #fff;
 }
 .aboutme div{
+  padding: 0 0 0 5px;
   display: table-cell;
   vertical-align:top;
 }
 .aboutme img{
   display: table-cell;
+}
+
+form{
+  background-color: #fff;
+}
+form .note{
+  padding: 5px 0 0 0;
+  font-size: .8em;
+}
+form section{
+  padding:0 0 5px 5px;
 }
 
 footer {
